@@ -1,0 +1,103 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0a068a;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(234, 232, 244);
+}
+header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 90%;
+  margin: auto auto;
+}
+input {
+  height: 60px;
+  font-size: 1.3rem;
+  width: 80%;
+  padding-left: 10%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border:none;
+  box-shadow: 5px 5px 5px rgb(64, 59, 59);
+}
+button.add {
+  width: 20%;
+  cursor: pointer;
+  background: green;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  height: 60px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(64, 59, 59);
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  margin: auto auto;
+  padding-top: 40px;
+}
+.item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 50px;
+  width: 100%;
+  box-shadow: 5px 0 20px #ccc;
+  margin-bottom: 2%;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.item.clicado {
+  background: #f3dd7c;
+}
+
+.item.clicado .item-nome {
+  text-decoration: line-through;
+  font-size: 2em;
+  color: rgb(86, 74, 74);
+}
+.item-icone {
+  flex: 20%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.item-nome {
+  flex: 55%;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.item-botao {
+  flex: 15%;
+}
+
+.delete {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 20%;
+  padding: 10px;
+  height: 40px;
+  width: 70%;
+  cursor: pointer;
+}
